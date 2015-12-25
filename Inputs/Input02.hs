@@ -1,4 +1,4 @@
-module Input02 where
+module Inputs.Input02 where
 
   input = [
     "29x13x26",
