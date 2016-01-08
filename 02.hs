@@ -45,7 +45,7 @@ parseInput2 input total = case input of
   dimensionString:input' -> parseInput2 input' (total + packageRibbonLength)
     where
       packageRibbonLength = getSmallestPerimeter dimensions + getPackageVolume dimensions
-        where dimensions = getDimensions dimensionString
+      dimensions = getDimensions dimensionString
 
 getSmallestPerimeter :: (Int, Int, Int) -> Int
 getSmallestPerimeter (l, w, h) = 2 * (min (min (l + w) (w + h)) (h + l))
